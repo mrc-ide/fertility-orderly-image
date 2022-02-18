@@ -1,0 +1,8 @@
+steps:
+  - label: ":construction_worker: Build"
+    command: docker/build
+
+  - wait
+
+  - label: ":shipit: Push"
+    command: docker/push

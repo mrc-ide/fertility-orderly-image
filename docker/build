@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -ex
+
+HERE=$(dirname $0)
+. $HERE/common
+
+docker build --pull \
+       -t $TAG_SHA \
+       -f docker/Dockerfile \
+       .
+
+docker push $TAG_SHA
