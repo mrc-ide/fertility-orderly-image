@@ -1,3 +1,3 @@
-FROM mrc-ide/hiv-orderly:latest
+FROM mrcide/hiv-orderly:latest
 
 WORKDIR /orderly
