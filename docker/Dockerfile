@@ -6,9 +6,8 @@ RUN install_packages --repo "https://www.vaccineimpact.org/drat/" \
     lwgeom \
     magrittr \
     Matrix \
-    mgxv \
+    mgcv \
     mvtnorm \
-    parallel \
     R6 \
     RcppEigen \
     rdhs \
