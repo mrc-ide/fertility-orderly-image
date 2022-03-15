@@ -3,6 +3,7 @@ FROM mrcide/hiv-orderly:latest
 # Add new packages here (in alphabetical order)
 RUN install_packages --repo "https://www.vaccineimpact.org/drat/" \
     countrycode \
+    cowplot \
     lwgeom \
     magrittr \
     Matrix \
@@ -19,6 +20,8 @@ RUN install_packages --repo "https://www.vaccineimpact.org/drat/" \
     zoo
 
 RUN install_remote \
-    osymandius/dfertility
+    osymandius/dfertility \
+    osymandius/moz.utils \
+    mrc-ide/demogsurv
 
 WORKDIR /orderly
