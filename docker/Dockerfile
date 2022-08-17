@@ -4,11 +4,13 @@ FROM mrcide/hiv-orderly:latest
 RUN install_packages --repo "https://mrc-ide.r-universe.dev"\
     countrycode \
     cowplot \
+    d.fertility \
     demogsurv \
     lwgeom \
     magrittr \
     Matrix \
     mgcv \
+    moz.utils \
     mvtnorm \
     R6 \
     RcppEigen \
@@ -19,9 +21,5 @@ RUN install_packages --repo "https://mrc-ide.r-universe.dev"\
     tidyverse \
     TMB \
     zoo
-
-RUN install_remote \
-    osymandius/dfertility \
-    osymandius/moz.utils
 
 WORKDIR /orderly
